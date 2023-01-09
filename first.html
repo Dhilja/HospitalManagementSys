@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="first.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hospital</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="left">
+       
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+            <div class="subnav">
+                <button class="subnavbtn"><i class="fa fa-fw fa-phone"></i> Contact</button>
+                <div class="subnav-content">
+                    <p> <i class="fa fa-fw fa-envelope"></i>  merehpkd@gmail.com</p>
+                    <p><i class="fa fa-fw fa-home"></i>  Changanasery Kottayam</p>
+                    <p><i class="fa fa-fw fa-phone"></i>  0481-288555</p>
+                </div>
+        </div>
+
+    </div>
+       
+        <div class="right">
+              
+           
+        <a href="/book.html"><i class="fa fa-fw fa-user" ></i> Doctors</a>
+        <div class="subnav_r">
+            <button class="subnavbtn_r"><i class="fa fa-fw fa-user"></i> Login</button>
+            <div class="subnav-content_r">
+               <a href="/staffLog.html" >Staff</a>
+              
+               <a href="/PatientLog.html">Patient</a>
+            </div> 
+        </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <button href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</button>
+    </div>
+ <div class="head">
+    <img src="4.jpg" alt="Notebook" style="width:100%; height:250px">
+   
+    <div class="name">
+    <h1 class="hname">Mere Hospital</h1>
+    <p class="tagline"> Where care comes first...</p>
+    </div>
+
+ </div>
+    <div class="content">
+      <h1 class="spec">About Us</h1>
+        <div class="abthos">
+         
+          <div class="hospimage">
+            <img src="build.jpg" class="build">
+          </div>
+          <div class="para">
+            <p class="hosp">Mere,the well-acclaimed health enterprise and one of the leading healthcare systems in India, assures comprehensive health care services with a global standard. The 600-bedded multispecialty hospital is renowned for its excellent medical expertise, nursing care and quality diagnostic services. By focusing on the idea of caring mission with a global vision, Mere - one of the best hospital of the nation , stresses on improving the health of the community by setting up the standard of excellence in medical education, research and clinical care. Aiming a patient- centric care, the hospital is utilizing enhanced lifesaving technologies for leveraging the level of cure.</p>
+        </div>
+      </div>
+     <h1 class="spec">Our Specialities</h1>
+     <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="surg.jpeg" style="width:100%;height:400px;">
+          <div class="text">24/7 Specilaized Services</div>
+        </div> 
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="hosp.jpg" style="width:100%;height:400px;">
+          <div class="text">Online Services</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="patient.jpeg" style="width:100%;height:400px;">
+          <div class="text">Best treatment across the state</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="care.jpg" style="width:100%;height:400px;">
+            <div class="text">Setting milestone in patient care</div>
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+
+        </div>
+     
+    </div>
+
+    <div class="link">
+        <p class="cont">Contact Us</p>
+        <p>Mere Hospital <br> Opp JBM Complex<br> Changanasery,Kottayam<br>678625<br>0481-288555<br>merehpkd@gmail.com</p>
+        
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("subnav-content_r");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+
+        
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>

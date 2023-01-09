@@ -1,0 +1,88 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+body {
+    font-family: Arial;
+    font-size: 17px;
+  }
+  .head {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height:120px;
+  }
+  
+  .head img {vertical-align: middle;}
+  .head .name {
+    position: absolute;
+    bottom: 0;
+    color: #141467;
+    width: 70%;
+    padding-left:30px;
+    
+  }  
+
+  .tagline{
+    padding-left:30px;
+    padding-top:20px;
+    font-size:20px;
+    font-style: italic;
+  }
+
+  .hname{
+    font-size:40px;
+    font-style: italic;
+  }
+
+  .search{
+    margin-left: 500px;
+    padding: 6px;
+    margin-top: 20px;
+    font-size: 17px;
+    
+    width:20%;
+  }
+
+  #mySearch{
+    font-size:17px;
+    margin-left: 700px;
+    margin-top:30px;
+    padding:4px;
+  }
+
+  .doctors{
+   
+    height:350px;
+   text-align: center;
+    width: 300px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 70px;
+    
+  }
+
+  #myMenu li {
+    
+    margin-top: -28px; /* Prevent double borders */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+
+  .details{
+    margin-top:8px;
+    font-size:17px;
+    font-weight: bold;
+  }
+
+  .se{
+    margin-left:auto;
+    margin-right:auto;
+  }

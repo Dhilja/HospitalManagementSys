@@ -1,0 +1,77 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: Arial;
+    font-size: 17px;
+  }
+  .head {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height:120px;
+  }
+  
+  .head img {vertical-align: middle;}
+  .head .name {
+    position: absolute;
+    bottom: 0;
+    color: #141467;
+    width: 70%;
+    padding-left:30px;
+    
+  }  
+
+  .tagline{
+    padding-left:30px;
+    padding-top:20px;
+    font-size:20px;
+    font-style: italic;
+  }
+
+  .hname{
+    font-size:40px;
+    font-style: italic;
+}
+
+.content{
+    margin-top:100px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.details{
+  margin-top:100px;
+  width:60%;
+  margin-left:20px;
+  float:left;
+}
+
+.bills{
+  width:15%;
+  float:left;
+  margin-top:100px;
+  margin-left:250px;
+}
+
+.det{
+  font-size: 17px;
+  color:#141467;
+}

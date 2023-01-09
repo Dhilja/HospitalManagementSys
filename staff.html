@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff | Mere</title>
+    <link rel="stylesheet" href="staff.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="navbar">
+       
+            <button class="btn" onclick="staff()" ><i class="fa fa-fw fa-user"></i>Staff Registartion</button>
+             <button class="btn" onclick="patient()" ><i class="fa fa-fw fa-user"></i>Patient Registartion</button>
+        <button class="btn" onclick="doctor()" ><i class="fa fa-fw fa-user"></i>Doctor Registartion</button>
+        <button class="btn" onclick="appointment()" ><i class="fa fa-fw fa-search"></i>Booking Appointment</button>
+       
+       <a href="./first.html" ><button class="user"><i class="fa fa-fw fa-user"></i>Logout</button></a>
+           
+        
+
+    </div>
+    <div class="head">
+        <img src="4.jpg" alt="Notebook" style="width:100%; height:150px">
+       
+        <div class="name" >
+        <h1 class="hname">Mere Hospital</h1>
+        <p class="tagline"> Where care comes first...</p>
+        </div>
+    
+     </div>
+     <div class="table " style="margin-top:100px;margin-left:200px;">
+        <table style="width:80%">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Doctor</th>
+                <th>Contact No.</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            
+
+        </table>
+     </div>
+    
+        <form id="staff" style="display:none;">
+            <div class="container">
+              <h1><i><font color=#008ECC >Staff Registration</font></i></h1>
+              
+              <p><br><br>Please fill in this form to create an account</p>
+              <hr>
+          
+              
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="name" id="name" required>
+              <br>
+                
+              <label for="gender"><b>Gender</b></label>
+              <input type="text" placeholder="Enter 'Male','Female' or 'Other'" name="gender" id="gender" required>
+          <br>
+              
+              <label for="age"><b>Age</b></label>
+              <input type="text" placeholder="Enter Age" name="age" id="age" required>
+          
+              <br>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          
+              <br>
+
+              <label for="designation"><b>Designation</b></label>
+              <input type="text" placeholder="Enter Designation" name="des" id="des" required>
+                
+              <br>
+          
+              <label for="email"><b>Phone No:</b></label>
+              <input type="text" placeholder="Enter Phone No:" name="phno" id="phno" required>
+          
+              <br>
+          
+              
+              
+            
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          
+              <br>
+          
+              <label for="psw-repeat"><b>Re-enter Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+              <br>
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+          
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+            
+            <div class="container signin">
+              <p>Already have an account? <a href="./staffLog.html">Sign in</a>.</p>
+            </div>
+          </form>
+
+          <form id="patient"style="display:none;" >
+            <div class="container">
+              <h1><i><font color=#008ECC >Patient Registration</font></i></h1>
+             
+              <p><br><br>Please fill in this form to create an account</p>
+              <hr>
+          
+              
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="name" id="name" required>
+              <br>
+                
+              <label for="gender"><b>Gender</b></label>
+              <input type="text" placeholder="Enter 'Male','Female' or 'Other'" name="gender" id="gender" required>
+          <br>
+              
+              <label for="age"><b>Age</b></label>
+              <input type="text" placeholder="Enter Age" name="age" id="age" required>
+          
+              <br>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          
+              <br>
+          
+              <label for="email"><b>Phone No:</b></label>
+              <input type="text" placeholder="Enter Phone No:" name="phno" id="phno" required>
+          
+              <br>
+              
+              
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          
+              <br>
+          
+              <label for="psw-repeat"><b>Re-enter Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+                <br>
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+            
+            <div class="container signin">
+              <p>Already have an account? <a href="./PatientLog.html">Sign in</a>.</p>
+            </div>
+          </form>
+
+          <form id="doctor" style="display:none">
+            <div class="container">
+              <h1><i><font color=#008ECC >Doctor Registration</font></i></h1>
+             
+              <p><br><br>Please fill in this form to create an account</p>
+              <hr>
+          
+              
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="name" id="name" required>
+              <br>
+                
+              <label for="gender"><b>Gender</b></label>
+              <input type="text" placeholder="Enter 'Male','Female' or 'Other'" name="gender" id="gender" required>
+          <br>
+              
+              <label for="age"><b>Age</b></label>
+              <input type="text" placeholder="Enter Age" name="age" id="age" required>
+          
+              <br>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          
+              <br>
+          
+              <label for="yoe"><b>Years of Experience</b></label>
+              <input type="text" placeholder="Enter Years" name="yoe" id="yoe" required>
+          
+              <br>
+          
+              <label for="spl"><b>Specialization</b></label>
+              <input type="text" placeholder="Enter Email" name="spl" id="spl" required>
+          
+              <br>
+          
+              <label for="phno"><b>Phone No</b></label>
+              <input type="text" placeholder="Enter Phone No:" name="phno" id="phno" required>
+          
+              <br>
+            <hr>
+              <br>
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+            
+           
+          </form>
+
+          <form id="appointment" style="display:none">
+            <div class="container">
+                <h1><i><font color=#008ECC >Book Your Appointment</font></i></h1> 
+              <p><br><br>Please fill in this form to make an appointment</p>
+              <hr>
+                <br>
+              
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="name" id="name" required>
+              <br>
+          
+              
+              <label for="Gender"><b>Gender</b></label>
+              <input type="text" placeholder="Enter 'Male','Female' or 'Other'" name="gender" id="gender" required>
+          <br>
+              
+              <label for="age"><b>Age</b></label>
+              <input type="text" placeholder="Enter Age" name="age" id="age" required>
+              <br>
+          
+              <label for="dname"><b>Doctor's Name</b></label>
+              <input type="text" placeholder="Enter Doctor's Name" name="dname" id="dname" required>
+              <br>
+              
+          
+              <label for="date"><b>Date</b></label>
+              <input type="date" placeholder="Enter Date" name="date" id="date" required>
+              <br>
+
+          
+              <label for="time"><b>Time</b></label>
+              <input type="time" placeholder="Enter Time" name="time" id="time" required>
+              <br>
+          
+              
+              <br>
+             
+              <hr>
+              <br>
+              <p>Click here to visit doctors' page <a href="./book.html">Link</a>.</p>
+          
+              <button type="submit" class="registerbtn">Confirm Appointment</button>
+            </div>
+            
+            <div class="container signin">
+              <p>Go to home? <a href="./first.html">Home</a>.</p>
+            </div>
+          </form>
+          
+
+         
+
+
+   
+
+    
+          <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+   
+    <script src="staff.js"></script>
+</body>
+</html>

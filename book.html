@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors | Mere</title>
+    <link rel="stylesheet" href="book.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="head">
+        <img src="4.jpg" alt="Notebook" style="width:100%; height:150px">
+       
+        <div class="name">
+        <h1 class="hname">Mere Hospital</h1>
+        <p class="tagline"> Where care comes first...</p>
+        </div>
+        
+        <div class="se">
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    </div>
+        <ul id="myMenu">
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 1 <br>Dr. Sagar Sahadevan<br>52 yrs<br>Cardiologist<br>22 Years of Experience<br>sagar1111@gmail.com</p>
+                </div>
+            </li>
+           
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 2<br>Dr. KP Gangadhar<br>53 yrs<br>Nuerologist<br>22 Years of Experience<br>kpg123@gmail.com</p>
+                </div>
+            </li>
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 3<br>Dr. S Raveendran<br>39 yrs<br>ENT<br>7 Years of Experience<br>raveendran@gmail.com</p>
+                </div>
+            </li>
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 4<br>Dr. M Linoj Antony<br>36 yrs<br>Dentist<br>8 Years of Experience<br>linant87@gmail.com</p>
+                </div>
+            </li>
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 5<br>Dr. A Banumathi<br>38 yrs<br>Gynoecologist<br>15 Years of Experience<br>banu@rediff.com</p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 6<br>Dr. Shafeeq Parambil<br>49 yrs<br>Dermatologist<br>19 Years of Experience<br>shafeeq42@gmail.com</p>
+                </div>
+            </li>
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 7<br>Dr. Leena Jose<br>31 yrs<br>Pediatrician<br>3 Years of Experience<br>ljose@yahoo.com</p>
+                </div>
+            </li>
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 8<br>Dr. Jacob Kurian<br>43 yrs<br>Orthopedic<br>14 Years of Experience<br>jacob71@rocketmail.com</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 9<br>Dr. Govind S Nair<br>38 yrs<br>Ophthamlogist<br>9 Years of Experience<br>govindnair@gmail.com</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 10<br>Dr. Mohammad Arif<br>43 yrs<br>Ophthamlogist<br>11 Years of Experience<br>arifarif987@gmail.com</p>
+                </div>
+            </li>
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 11<br>Dr. Kammapa P<br>60 yrs<br>Ophthamlogist<br>25 Years of Experience<br>kammapa78@gmail.com</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="doctors">
+                    <img src="avatar.jpg" style="width:200px;height:200px;">
+                    <p class="details">ID 12<br>Dr. Venkat Naidu<br>40 yrs<br>Ophthamlogist<br>9 Years of Experience<br>naiduvenkat@hotmail.com</p>
+                </div>
+            </li>
+
+           
+        </ul>
+
+        <script>
+            function myFunction() {
+              var input, filter, ul, li, doctors, i;
+              input = document.getElementById("mySearch");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myMenu");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByClassName("doctors")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+</body>
+</html>
